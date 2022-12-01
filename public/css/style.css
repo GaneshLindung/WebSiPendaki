@@ -1,0 +1,148 @@
+/* Ini CSS Tab Pencarian */
+.search{
+    position: relative;
+    box-shadow: 0 0 40px rgba(51, 51, 51, .1);  
+    }
+
+.search input{
+     height: 60px;
+     text-indent: 25px;
+     border: 2px solid #d6d4d4;
+    }
+
+.search input:focus{
+     box-shadow: none;
+     border: 2px solid blue;
+    }
+
+.search .fa-search{
+     position: absolute;
+     top: 20px;
+     left: 16px;
+    }
+
+.search button{
+     position: absolute;
+     top: 5px;
+     right: 5px;
+     height: 50px;
+     width: 110px;
+     background: blue;
+    }
+
+/* Ini CSS Cards */
+.container{
+    transform-style: preserve-3d;
+}
+
+.container .box{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.container .box .body{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: 0.9s ease;
+}
+
+
+
+.container .box .body .imgContainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
+.container .box .body .imgContainer img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .box .body .content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+}
+
+.container .box:hover .body{
+    transform: rotateY(180deg);
+}
+
+.container .box .body .content div{
+    transform-style: preserve-3d;
+    padding: 20px;
+    background: linear-gradient(45deg, #FE0061,#FFEB3B);
+    transform: translateZ(100px);
+}
+
+.container .box .body .content div h3{
+    letter-spacing: 1px;
+}
+
+/* Ini CSS Testimoni */
+.home-testimonial{
+    background-color: #231834;height: 380px
+}
+
+.home-testimonial-bottom{
+    background-color: #f8f8f8;transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;margin-top: 20px;margin-bottom: 0px;position: relative;height: 130px;top: 190px
+}
+
+.home-testimonial h3{
+    color: var(--orange);font-size: 14px;font-weight: 500;text-transform: uppercase
+}
+
+.home-testimonial h2{
+    color: white;font-size: 28px;font-weight: 700
+}
+
+.testimonial-inner{
+    position: relative;top: -174px
+}
+
+.testimonial-pos{
+    position: relative;top: 24px
+}
+
+.testimonial-inner .tour-desc{
+    border-radius: 5px;padding: 40px
+}
+
+.color-grey-3{
+    font-family: "Montserrat", Sans-serif;font-size: 14px;color: #6c83a2
+}
+
+.testimonial-inner img.tm-people{
+    width: 60px;height: 60px;-webkit-border-radius: 50%;border-radius: 50%;-o-object-fit: cover;object-fit: cover;max-width: none
+}
+
+.link-name{
+    font-family: "Montserrat", Sans-serif;font-size: 14px;color: #6c83a2
+}
+
+.link-position{
+    font-family: "Montserrat", Sans-serif;font-size: 12px;color: #6c83a2
+}
