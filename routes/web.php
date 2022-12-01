@@ -19,9 +19,9 @@ Route::get('/', function () {
 
 Route::get('/demo', function () {
     return view('demo');
- });
+});
 
- Route::get('/test', function() {
+Route::get('/test', function() {
     return view('master');
 });
 
