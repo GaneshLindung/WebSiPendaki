@@ -1,0 +1,146 @@
+.decor1{
+    position: absolute;
+    top: 100%;
+    background-color: pink;
+    width: 500px;
+    height: 80px;
+    border-radius: 50px;
+    transform: rotate(-30deg);
+  }
+.pos1{position: absolute; left: 200px; top:-10%;}
+.pos2{position: absolute; left: -200px; top:-50px;}
+.pos3{}
+  
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+  
+.column-one{
+    padding: 2em;
+    background-color: #4d13ef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+  
+.column-one > p{
+    color: white;
+}
+  
+.column-one > button{
+    font-size: 1em;
+    letter-spacing: 1px;
+    padding: 1.5em;
+    border-radius: 50px;
+    border: 1px solid white;
+    color: white;
+    background-color: #4d13ef;
+    width: 200px;
+}
+  
+.column-one > button:hover{
+    background-color: pink;
+    color: #4d13ef;
+}
+  
+  
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+  
+  
+.signup-form{
+    text-align: center;
+    background-color: white;
+    height: 70%;
+    width: 70%;
+}
+  
+h2{
+    font-size: 3.5em;
+    font-weight: 700;
+    margin-bottom: 0;
+    letter-spacing: 1px;
+  }
+  
+h4{
+    margin:0;
+    letter-spacing: 3px;
+    font-weight: 300;
+    margin-bottom: 40px;
+    line-height: 2;
+    font-size: 1.2em;
+}
+  
+  
+.signup-form input{
+    display: block;
+    margin: 30px auto;
+    padding: 1.8em;
+    width: 60%;
+    max-width: 450px;
+    border-radius: 50px;
+    border: 1px solid grey;
+    font-size: 1em;
+    letter-spacing: 1px;
+  }
+  
+@media (max-width: 750px){
+    .signup-form input{
+      width: 80%;
+    }
+}
+  
+  
+  
+.signup-form input[type="submit"]{
+    padding: 25px;
+    color: white;
+    background-color: #4d13ef;
+    letter-spacing: 2px;
+    width: 70%;
+    border:none;
+}
+  
+.signup-form input[type="submit"]:hover{
+    background-color: #ffe926;
+}
+  
+p{
+    color: #878787;
+    font-size: 1em;
+    letter-spacing: 1.2px;
+}
+  
+span{
+    color: #4d13ef;
+    font-weight: 700;
+}
+  
+a{
+    text-decoration: none;
+}
+  
+.socials{
+    padding: 1em;
+}
+  
+.social-icon{
+    border: 1px solid #f0f0f0;
+    padding: 1.2em;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+}
+  
+.social-icon:hover{
+    background-color: #e0e0e0;
+}
