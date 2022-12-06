@@ -67,6 +67,6 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 Anggota Kelompok:
 1. Muhammad Ayyas (2107071)
-2. Difa Safrina
-3. Ganesh Lindung
-4. Adrian Kusuma
+2. Difa Safrina  (2101988)
+3. Ganesh Lindung  (2100427)
+4. Adrian Kusuma  (2103456)
