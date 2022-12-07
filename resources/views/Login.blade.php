@@ -27,8 +27,8 @@
   
   
   <div class="signup-form">
-    <h2>Create Account</h2>
-    <h4>Become a member today</h4>
+    <h2>Buat Akun</h2>
+    <h4>Mari bergabung bersama sahabat Si Pendaki</h4>
     <input type="email" placeholder="Your Email">
     <input type="password" placeholder="Password"> 
     <input type="submit" value="Sign up">
