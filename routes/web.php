@@ -19,12 +19,16 @@ Route::get('/', function () {
 
 Route::get('/demo', function () {
     return view('demo');
-});
+ });
 
-Route::get('/test', function() {
+ Route::get('/test', function() {
     return view('master');
 });
 
-Route::get('/login', function() {
-    return view('Login');
+Route::get('/signup', function() {
+    return view('signup');
+});
+
+Route::get('/signin', function() {
+    return view('signin');
 });
