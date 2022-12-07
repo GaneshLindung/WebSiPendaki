@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>Log in</title>
+  <title>Sign Up</title>
   <link rel="stylesheet" href="css/login.css">
 
 </head>
@@ -24,23 +24,20 @@
     </div>
   
 <div class="container">
-  
-  
   <div class="signup-form">
     <h2>Buat Akun</h2>
-    <h4>Mari bergabung bersama sahabat Si Pendaki</h4>
+    <p>Mari bergabung bersama sahabat Si Pendaki</p>
     <input type="email" placeholder="Your Email">
     <input type="password" placeholder="Password"> 
     <input type="submit" value="Sign up">
-    <p>Already have an account? <span><a href src="#">Sign in</></span></p>
+    <p>Already have an account? <span><a href="/signin">Sign in</></span></p>
+    <p>Or</p>
      <div class="socials">
        <i class="fab fa-facebook-f social-icon"></i>
        <i class="fab fa-google social-icon"></i>
        <i class="fab fa-twitter social-icon"></i>
     </div>
   </div>
-  
-  
 </div>
 </div>
 <!-- partial -->
