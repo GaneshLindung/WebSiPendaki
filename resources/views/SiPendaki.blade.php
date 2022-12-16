@@ -1,99 +1,106 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Si Pendaki</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Si Pendaki</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   </head>
+
   <body>
-<!-- Ini Bagian Navbar -->    
-    <nav class="navbar navbar-expand-lg" style="background-color: deepskyblue">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Si Pendaki</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <!-- Ini Bagian Navbar -->    
+    <nav class="navbar navbar-expand-lg">
+       <div class="container">
+         <a class="navbar-brand" href="#"><img src="img/logo.png" alt="" style="width: 5pc; height: 5pc;"></a>
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/signup">Buat akun</a>
+                <a class="nav-link active" aria-current="page" href="#">Si Pendaki</a>
               </li>
             </ul>
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">Daftar Gunung</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">Dakbar</a>
-                  </li>
+
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/register">Register</a>
+              </li>
+
+              <li class="nav-item">
+                 <a class="nav-link" href="#">Daftar Gunung</a>
+              </li>
             </ul>
           </div>
         </div>
-      </nav>
-<!-- Ini Bagian Container 1 -->
-      <div class="container" style="padding-top: 50px">
-        <h1 style="text-align: center">Explore Gunung Indonesia</h1>
-        <p style="text-align: center">Sahabat Pendaki Indonesia</p>
-      </div>
-<!-- Ini Bagian Tab Pencarian -->
-      <div class="container">
-        <div class="row height d-flex justify-content-center align-items-center">
-          <div class="col-md-8">
-            <div class="search" >
-              <i class="fa fa-search"></i>
-              <input type="text" class="form-control" placeholder="Mau mendaki kemana?">
-              <button class="btn btn-primary" style="top:5px; right:5px">Cari</button>
-            </div>            
-          </div>  
+    </nav>
+
+    <!-- Ini Bagian Container 1 -->
+        <div class="container" style="padding-top: 50px">
+            <h1 style="text-align: center;">Explore Gunung Indonesia</h1>
+            <p style="text-align: center">Sahabat Pendaki Indonesia</p>
+         </div>
+    <!-- Ini Bagian Tab Pencarian -->
+        <div class="container">
+            <div class="row height d-flex justify-content-center align-items-center">
+                <div class="col-md-8">
+                    <div class="search" >
+                        <i class="fa fa-search"></i>
+                        <input type="text" class="form-control" placeholder="Mau mendaki kemana?">
+                        <button class="btn btn-primary" style="top:5px; right:5px">Cari</button>
+                    </div>            
+                </div>  
+            </div>
+        </div>
+    <!-- Ini Bagian Cards -->
+    <div class="container d-flex align-items-center justify-content-center flex-wrap" style="padding-top: 50px">
+        <div class="box">
+            <div class="body">
+                <div class="imgContainer">
+                    <img src="https://images.pexels.com/photos/3601422/pexels-photo-3601422.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                </div>
+                <div class="content d-flex flex-column align-items-center justify-content-center">
+                    <div>
+                        <h3 class="text-white fs-5">Post Title</h3>
+                        <p class="fs-6 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sed cum neque, rem provident ex. Laboriosam perspiciatis modi eveniet in?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="body">
+                <div class="imgContainer">
+                    <img src="https://images.pexels.com/photos/3601422/pexels-photo-3601422.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                </div>
+                <div class="content d-flex flex-column align-items-center justify-content-center">
+                    <div>
+                        <h3 class="text-white fs-5">Post Title</h3>
+                        <p class="fs-6 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sed cum neque, rem provident ex. Laboriosam perspiciatis modi eveniet in?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="body">
+                <div class="imgContainer">
+                    <img src="https://images.pexels.com/photos/3601422/pexels-photo-3601422.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                </div>
+                <div class="content d-flex flex-column align-items-center justify-content-center">
+                    <div>
+                        <h3 class="text-white fs-5">Post Title</h3>
+                        <p class="fs-6 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sed cum neque, rem provident ex. Laboriosam perspiciatis modi eveniet in?</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-<!-- Ini Bagian Cards -->
-  <div class="container d-flex align-items-center justify-content-center flex-wrap" style="padding-top: 50px">
-  <div class="box">
-      <div class="body">
-          <div class="imgContainer">
-              <img src="https://images.pexels.com/photos/3601422/pexels-photo-3601422.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
-          </div>
-          <div class="content d-flex flex-column align-items-center justify-content-center">
-              <div>
-                  <h3 class="text-white fs-5">Post Title</h3>
-                  <p class="fs-6 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sed cum neque, rem provident ex. Laboriosam perspiciatis modi eveniet in?</p>
-              </div>
-          </div>
-      </div>
-  </div>
-  <div class="box">
-      <div class="body">
-          <div class="imgContainer">
-              <img src="https://images.pexels.com/photos/1532771/pexels-photo-1532771.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
-          </div>
-          <div class="content d-flex flex-column align-items-center justify-content-center">
-              <div>
-                  <h3 class="text-white fs-5">Post Title</h3>
-                  <p class="fs-6 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sed cum neque, rem provident ex. Laboriosam perspiciatis modi eveniet in?</p>
-              </div>
-          </div>
-      </div>
-  </div>
-  <div class="box">
-      <div class="body">
-          <div class="imgContainer">
-              <img src="https://images.pexels.com/photos/573238/pexels-photo-573238.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="">
-          </div>
-          <div class="content d-flex flex-column align-items-center justify-content-center">
-              <div>
-                  <h3 class="text-white fs-5">Post Title</h3>
-                  <p class="fs-6 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sed cum neque, rem provident ex. Laboriosam perspiciatis modi eveniet in?</p>
-              </div>
-          </div>
-      </div>
-  </div>
-  </div>
 <!-- Ini Bagian Testimoni -->
   <section class="home-testimonial">
   <div class="container-fluid">
@@ -139,6 +146,41 @@
       </section>
   </section>
 
+<!-- Ini Bagian Footer -->
+  <footer class="footer">
+    <div class="footer-left">
+      <img src="img/logo.png" alt="" style="width: 50% ;">
+    </div>
+    <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Indonesia</span>Jawa Barat, Purwakarta</p>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+62 812 2992 9129</p>
+            </div>
+            <div>
+                <i class="fa fa-mail"></i>
+                <p><a href="#">support@gmail.com</a></p>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer-right">
+      <p class="follow">
+        <span>Follow us</span> 
+      </p>
+      <div class="media">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+      </div>  
+    </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   </body>
 </html>
