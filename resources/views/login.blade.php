@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>Sign Up</title>
+  <title>Log in</title>
   <link rel="stylesheet" href="css/login.css">
 
 </head>
@@ -29,7 +29,7 @@
     <p>Masuk ke akun Si Pendaki mu</p>
     <input type="email" placeholder="Your Email">
     <input type="password" placeholder="Password"> 
-    <input type="submit" value="Sign in">
+    <input type="submit" value="Log in">
     <p>Or</p>
      <div class="socials">
        <i class="fab fa-facebook-f social-icon"></i>
