@@ -25,10 +25,10 @@ Route::get('/demo', function () {
     return view('master');
 });
 
-Route::get('/signup', function() {
-    return view('signup');
+Route::get('/register', function() {
+    return view('register');
 });
 
-Route::get('/signin', function() {
-    return view('signin');
+Route::get('/login', function() {
+    return view('login');
 });
