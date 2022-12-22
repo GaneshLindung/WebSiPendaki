@@ -30,11 +30,26 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#" style="color: #fff;">Login</a>
+                        @auth
+                            <a class="nav-link">Hi {{ auth()->user()->name }}</a>
+                        @else
+                            <a class="nav-link" href="/register" style="color: #fff;">Register</a>
+                        @endauth
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#" style="color: #fff;">Daftar Gunung</a>
                     </li>
+                    @auth
+                        <li>
+                            <a class="btn btn-danger" href="{{ route('logout') }}"
+                                onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                Keluar
+                            </a>
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                {{ csrf_field() }}
+                            </form>
+                        </li>
+                    @endauth
                 </ul>
             </div>
         </div>

@@ -1,6 +1,8 @@
 <?php
-
+use App\Http\Controllers\Auth\LoginController;
 use Illuminate\Support\Facades\Route;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -12,23 +14,26 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Auth::routes();
 Route::get('/', function () {
     return view('SiPendaki');
 });
 
 Route::get('/demo', function () {
     return view('demo');
- });
+});
 
- Route::get('/test', function() {
+Route::get('/test', function() {
     return view('master');
 });
 
-Route::get('/register', function() {
-    return view('register');
-});
 
-Route::get('/login', function() {
-    return view('login');
+Route::group(['middleware' => ['guest']], function () {
+    Route::get('/register', function() {
+        return view('register');
+    });
+
+    Route::get('/login', function() {
+        return view('login');
+    });
 });

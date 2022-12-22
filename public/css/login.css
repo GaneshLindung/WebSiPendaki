@@ -1,14 +1,14 @@
-*{
+* {
     transition: all 0.3s ease;
 }
-  
-body{
+
+body {
     padding: 0;
     margin: 0;
     font-family: "Open Sans", sans-serif;
 }
 
-.decor1{
+.decor1 {
     position: absolute;
     top: 100%;
     background-color: pink;
@@ -16,17 +16,26 @@ body{
     height: 80px;
     border-radius: 50px;
     transform: rotate(-30deg);
-  }
-.pos1{position: absolute; left: 200px; top:-10%;}
-.pos2{position: absolute; left: -200px; top:-50px;}
-.pos3{}
-  
-.grid{
+}
+.pos1 {
+    position: absolute;
+    left: 200px;
+    top: -10%;
+}
+.pos2 {
+    position: absolute;
+    left: -200px;
+    top: -50px;
+}
+.pos3 {
+}
+
+.grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-  
-.column-one{
+
+.column-one {
     padding: 2em;
     background-color: #4d13ef;
     display: flex;
@@ -36,12 +45,12 @@ body{
     text-align: center;
     color: white;
 }
-  
-.column-one > p{
+
+.column-one > p {
     color: white;
 }
-  
-.column-one > button{
+
+.column-one > button {
     font-size: 1em;
     letter-spacing: 1px;
     padding: 1.5em;
@@ -51,13 +60,12 @@ body{
     background-color: #4d13ef;
     width: 200px;
 }
-  
-.column-one > button:hover{
+
+.column-one > button:hover {
     background-color: pink;
     color: #4d13ef;
 }
-  
-  
+
 .container {
     height: 100vh;
     display: flex;
@@ -65,35 +73,33 @@ body{
     justify-content: center;
     flex-direction: column;
 }
-  
-  
-.signup-form{
+
+.signup-form {
     text-align: center;
     background-color: white;
     height: 70%;
     width: 70%;
 }
-  
-h2{
+
+h2 {
     font-size: 3.5em;
     font-weight: 700;
     margin-bottom: 0;
     letter-spacing: 1px;
-  }
-  
-h4{
-    margin:0;
+}
+
+h4 {
+    margin: 0;
     letter-spacing: 3px;
     font-weight: 300;
     margin-bottom: 40px;
     line-height: 2;
     font-size: 1.2em;
 }
-  
-  
-.signup-form input{
+
+.signup-form input {
     display: block;
-    margin: 30px auto;
+    margin: 30px auto 0 auto;
     padding: 1.8em;
     width: 60%;
     max-width: 450px;
@@ -101,56 +107,69 @@ h4{
     border: 1px solid grey;
     font-size: 1em;
     letter-spacing: 1px;
-  }
-  
-@media (max-width: 750px){
-    .signup-form input{
-      width: 80%;
+}
+.signup-form .text-danger {
+    font-size: 11px;
+    color: red;
+    text-align: left;
+}
+.signup-form .notification {
+    padding: 15px;
+    margin: 15px 5px 5px 5px;
+    border-radius: 30px;
+    color: white;
+    font-size: 14px;
+    font-weight: normal;
+}
+.signup-form .notification.success {
+    background-color: #5cb85c;
+}
+@media (max-width: 750px) {
+    .signup-form input {
+        width: 80%;
     }
 }
-  
-  
-  
-.signup-form input[type="submit"]{
+
+.signup-form input[type="submit"] {
     padding: 25px;
     color: white;
     background-color: #4d13ef;
     letter-spacing: 2px;
     width: 70%;
-    border:none;
+    border: none;
 }
-  
-.signup-form input[type="submit"]:hover{
+
+.signup-form input[type="submit"]:hover {
     background-color: #ffe926;
 }
-  
-p{
+
+p {
     color: #878787;
     font-size: 1em;
     letter-spacing: 1.2px;
 }
-  
-span{
+
+span {
     color: #4d13ef;
     font-weight: 700;
 }
-  
-a{
+
+a {
     text-decoration: none;
 }
-  
-.socials{
+
+.socials {
     padding: 1em;
 }
-  
-.social-icon{
+
+.social-icon {
     border: 1px solid #f0f0f0;
     padding: 1.2em;
     border-radius: 50%;
     height: 20px;
     width: 20px;
 }
-  
-.social-icon:hover{
+
+.social-icon:hover {
     background-color: #e0e0e0;
 }
