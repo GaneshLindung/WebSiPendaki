@@ -221,23 +221,23 @@
             </div>
             <div>
                 <i class="fa fa-phone"></i>
-                <p>+62 812 2992 9129</p>
+                <p>+62 8956 0520 0802</p>
             </div>
             <div>
                 <i class="fa fa-mail"></i>
-                <p><a href="#">support@gmail.com</a></p>
+                <p>sipendaki@mail.com</p>
             </div>
         </div>
 
         </div>
         <div class="footer-right">
             <p class="follow">
-                <span>Follow us</span>
+                <span>Terhubung Dengan Kami</span>
             </p>
             <div class="media">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-instagram"></i></a>
-                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/sahabatmendakimu" target="_blank"><i
+                        class="fa fa-facebook"></i></a>
+                <a href="https://wa.me/+62895605200802" target="_blank"><i class="fa fa-whatsapp"></i></a>
             </div>
         </div>
     </footer>
