@@ -57,7 +57,7 @@
                 <p>Or</p>
                 <div class="socials">
                     <i class="fab fa-facebook-f social-icon"></i>
-                    <i class="fab fa-google social-icon"></i>
+                    <a href="{{ route('google.login') }}" class="btn"><i class="fab fa-google social-icon"></i></a>
                     <i class="fab fa-twitter social-icon"></i>
                 </div>
             </div>

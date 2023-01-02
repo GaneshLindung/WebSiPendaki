@@ -37,7 +37,7 @@
                         @endauth
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" style="color: #fff;">Daftar Gunung</a>
+                        <a class="nav-link" href="/gunung" style="color: #fff;">Daftar Gunung</a>
                     </li>
                     @auth
                         <li>

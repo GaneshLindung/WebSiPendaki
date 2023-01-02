@@ -37,3 +37,9 @@ Route::group(['middleware' => ['guest']], function () {
         return view('login');
     });
 });
+
+Route::get('/gunung', [App\Http\Controllers\PostController::class, 'display']);
+Route::get('/gunung/{post:slug}', [App\Http\Controllers\PostController::class, 'show']);
+
+Route::get('auth/google', [App\Http\Controllers\GoogleController::class, 'redirect'])->name('google.login');
+Route::get('auth/google/callback', [App\Http\Controllers\GoogleController::class, 'callbackGoogle'])->name('google.callback');

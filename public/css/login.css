@@ -37,13 +37,14 @@ body {
 
 .column-one {
     padding: 2em;
-    background-color: #4d13ef;
+    background-color: #126e82;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
     color: white;
+    height: 100vh;
 }
 
 .column-one > p {
@@ -133,7 +134,7 @@ h4 {
 .signup-form input[type="submit"] {
     padding: 25px;
     color: white;
-    background-color: #4d13ef;
+    background-color: #126e82;
     letter-spacing: 2px;
     width: 70%;
     border: none;
