@@ -301,6 +301,11 @@
     transform: translateY(-10px);
 }
 
+.facebook-icons:hover,
+.whatsapp-icons:hover {
+    background-color: #333;
+}
+
 @media (max-width: 880px) {
     .footer .footer-left,
     .footer .footer-center,

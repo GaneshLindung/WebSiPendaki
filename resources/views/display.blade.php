@@ -17,9 +17,9 @@
 
 <body>
     <!-- Ini Bagian Navbar -->
-    <nav class="navbar navbar-expand-lg" style="background-color: deepskyblue">
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/">Si Pendaki</a>
+            <a class="navbar-brand" href="/" style="color: #fff;">Si Pendaki</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -29,9 +29,10 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         @auth
-                            <a class="nav-link">Hi {{ auth()->user()->name }}</a>
+                            <a class="nav-link" style="color: #fff;">Hi {{ auth()->user()->name }}</a>
                         @else
-                            <a class="nav-link active" aria-current="page" href="/register">Buat akun</a>
+                            <a class="nav-link active" aria-current="page" href="/register" style="color: #fff;">Buat
+                                akun</a>
                         @endauth
 
 
@@ -39,10 +40,7 @@
                 </ul>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="http://127.0.0.1:8000/gunung">Daftar Gunung</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Dakbar</a>
+                        <a class="nav-link active" href="/gunung" style="color: #fff;">Informasi Gunung</a>
                     </li>
                     @auth
                         <li>
