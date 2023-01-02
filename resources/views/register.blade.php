@@ -31,24 +31,22 @@
                 <h2>Buat Akun</h2>
                 <p>Mari bergabung bersama sahabat Si Pendaki</p>
                 @if (session()->has('notification'))
-                    <span class="notification success">
-                        {!! session('notification') !!}
-                    </span>
+                <span class="notification success">
+                    {!! session('notification') !!}
+                </span>
                 @endif
                 <form action="{{ url('register') }}" method="post">
-                    <input type="text" name="name" id="name" placeholder="Your Name"
-                        value="{{ old('name') }}">
+                    <input type="text" name="name" id="name" placeholder="Your Name" value="{{ old('name') }}">
                     @if ($errors->has('name'))
-                        <span class="text-danger">{{ $errors->first('name') }}</span>
+                    <span class="text-danger">{{ $errors->first('name') }}</span>
                     @endif
-                    <input type="email" name="email" id="email" placeholder="Your Email"
-                        value="{{ old('email') }}">
+                    <input type="email" name="email" id="email" placeholder="Your Email" value="{{ old('email') }}">
                     @if ($errors->has('email'))
-                        <span class="text-danger">{{ $errors->first('email') }}</span>
+                    <span class="text-danger">{{ $errors->first('email') }}</span>
                     @endif
                     <input type="password" name="password" id="password" placeholder="Password">
                     @if ($errors->has('password'))
-                        <span class="text-danger">{{ $errors->first('password') }}</span>
+                    <span class="text-danger">{{ $errors->first('password') }}</span>
                     @endif
                     <input type="hidden" name="_token" value="{{ csrf_token() }}" />
                     <input type="submit" value="Register">
