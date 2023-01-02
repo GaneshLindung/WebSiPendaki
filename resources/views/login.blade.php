@@ -33,11 +33,11 @@
                 <form action="{{ url('login') }}" method="post">
                     <input type="email" name="email" placeholder="Your Email" value="{{ old('email') }}">
                     @if ($errors->has('email'))
-                        <span class="text-danger">{{ $errors->first('email') }}</span>
+                    <span class="text-danger">{{ $errors->first('email') }}</span>
                     @endif
                     <input type="password" name="password" placeholder="Password">
                     @if ($errors->has('password'))
-                        <span class="text-danger">{{ $errors->first('password') }}</span>
+                    <span class="text-danger">{{ $errors->first('password') }}</span>
                     @endif
                     <input type="submit" value="Log in">
                     <input type="hidden" name="_token" value="{{ csrf_token() }}" />
@@ -45,7 +45,7 @@
                 <p>Or</p>
                 <div class="socials">
                     <i class="fab fa-facebook-f social-icon"></i>
-                    <i class="fab fa-google social-icon"></i>
+                    <a href="{{ route('google.login') }}" class="btn"><i class="fab fa-google social-icon"></i></a>
                     <i class="fab fa-twitter social-icon"></i>
                 </div>
             </div>
