@@ -73,101 +73,27 @@
     </div>
     <!-- Ini Bagian Cards -->
     <div class="container d-flex align-items-center justify-content-center flex-wrap" style="padding-top: 50px">
-        <div class="box">
-            <div class="body">
-                <div class="imgContainer">
-                    <img src="img/G.Rinjani.jpg" alt="">
-                </div>
-                <div class="content d-flex flex-column align-items-center justify-content-center">
-                    <div>
-                        <h3 class="text-white fs-5">Gunung Rinjani</h3>
-                        <p class="fs-6 text-white">Gunung Rinjani (3726 m) yang mendominasi dengan sebagian besar
-                            wilayahnya yang mengesankan di seluruh bagian utara Lombok, adalah gunung berapi tertinggi
-                            kedua di Indonesia.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <div class="box">
-            <div class="body">
-                <div class="imgContainer">
-                    <img src="img/Raung3.jpg" alt="">
-                </div>
-                <div class="content d-flex flex-column align-items-center justify-content-center">
-                    <div>
-                        <h3 class="text-white fs-5">Gunung Raung</h3>
-                        <p class="fs-6 text-white">Gunung Raung merupakan gunung dengan puncak tertinggi di kawasan
-                            Pegunungan Ijen dengan puncak tertinggi: 3.344 mdpl. Gunung Raung terkenal memiliki jalur
-                            pendakian yang ekstrem.</p>
+        @foreach ($posts as $gunung)
+            @if ($loop->index < 3)
+                <a href="/gunung/{{ $gunung->slug }}">
+                    <div class="box">
+                        <div class="body">
+                            <div class="imgContainer">
+                                <img src="img/{{ $gunung->gambarUtama }}" alt="">
+                            </div>
+                            <div class="content d-flex flex-column align-items-center justify-content-center">
+                                <div>
+                                    <h3 class="text-white fs-5">{{ $gunung->nama }}</h3>
+                                    <p class="fs-6 text-white">{{ $gunung->detail }}</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
+                </a>
+            @endif
+        @endforeach
 
-        <div class="box">
-            <div class="body">
-                <div class="imgContainer">
-                    <img src="img/Gede2.png" alt="">
-                </div>
-                <div class="content d-flex flex-column align-items-center justify-content-center">
-                    <div>
-                        <h3 class="text-white fs-5">Gunung Gede</h3>
-                        <p class="fs-6 text-white">Gunung Gede merupakan sebuah gunung api bertipe stratovolcano, gunung
-                            ini memiliki ketinggian kurang lebih 2.958 mdpl. Selain telaga biru ada juga air terjun
-                            cibeurem yang menjadi daya tarik.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="body">
-                <div class="imgContainer">
-                    <img src="img/Batur.jpg" alt="">
-                </div>
-                <div class="content d-flex flex-column align-items-center justify-content-center">
-                    <div>
-                        <h3 class="text-white fs-5">Gunung Batur</h3>
-                        <p class="fs-6 text-white">Gunung Batur adalah gunung tertinggi kedua di Pulau Bali dengan
-                            ketinggiannya 1.717 mdpl. Gunung Batur memiliki pemandangan menarik seperti black lava,
-                            danau batur, pemendian air panas dll.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="body">
-                <div class="imgContainer">
-                    <img src="img/Prau1.jpg" alt="">
-                </div>
-                <div class="content d-flex flex-column align-items-center justify-content-center">
-                    <div>
-                        <h3 class="text-white fs-5">Gunung Prau</h3>
-                        <p class="fs-6 text-white">Gunung Prau memiliki ketinggian kurang lebih 2.565 mdpl. Gunung ini
-                            cocok untuk pendaki amatir dan pemula. Daya tarik selain bukit teletubies di gunung prau
-                            juga mudah menemukan bunga lonte sore.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="body">
-                <div class="imgContainer">
-                    <img src="img/Semeru2.jpg" alt="">
-                </div>
-                <div class="content d-flex flex-column align-items-center justify-content-center">
-                    <div>
-                        <h3 class="text-white fs-5">Gunung Semeru</h3>
-                        <p class="fs-6 text-white">Gunung Semeru atau Gunung Meru dengan puncaknya Mahameru, 3.676
-                            mdpl. Gunung Semeru memiliki daya tarik seperti panorama padang lavender hingga Danau Ranu
-                            Kumbolo.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 
     <!-- Ini Bagian Testimoni -->

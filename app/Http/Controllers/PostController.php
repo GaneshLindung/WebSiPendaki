@@ -24,6 +24,15 @@ class PostController extends Controller
         ]);
     }
 
+    public function utama()
+    {
+
+        return view('Sipendaki',[
+            'posts' => Post::all()
+        ]);
+
+    }
+
     // public function index()
     // {
 
