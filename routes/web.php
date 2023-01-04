@@ -17,9 +17,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Auth::routes();
-Route::get('/', function () {
-    return view('SiPendaki');
-});
+// Route::get('/', function () {
+//     return view('SiPendaki');
+// });
+
+Route::get('/', [App\Http\Controllers\PostController::class, 'utama']);
 
 Route::get('/demo', function () {
     return view('demo');
